@@ -1,0 +1,72 @@
+body{
+    background-color: bisque;
+}
+h1{
+    text-align: center;
+}
+.zaszlo{
+    width: 1000px;
+    padding: 15px;
+    margin: 20px auto;
+}
+.szinek{
+    width: 100%;
+    height: 100px;
+}
+.piros{
+    background-color: red;
+}
+.feher{
+    background-color: white;
+}
+.zold{
+    background-color: green;
+}
+.pf, .ff, .zf{
+    display: none;
+}
+/*piros rész*/
+@media screen and (max-width: 1000px){
+    .zaszlo{
+        width: 95%;
+    }
+    .piros{
+        border: 2px solid blue;
+    }
+        .cim{
+        display: none;
+    }
+    .pf{
+        display: block;
+    }
+}
+/*fehér rész*/
+@media screen and (max-width: 800px){ 
+    .feher{
+        border: 2px solid blue;
+    }
+    .ff{
+        display: block;
+    }
+    .pf{
+        display: none;
+    }
+    .piros{
+        border: none;
+    }
+}
+/*zöld rész*/
+@media screen and (max-width: 600px){
+    .zold{
+        border: 2px solid blue;
+    }
+    .ff{
+        display: none;
+    }
+    .zf{
+        display: block;
+    }
+    .feher{
+        border: none;
+    }
+}
